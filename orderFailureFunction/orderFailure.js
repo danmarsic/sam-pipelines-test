@@ -10,5 +10,5 @@ exports.handler = async (event) => {
     paymentManager.widrawPayment(orderId)
     await dynamodbManager.updateItem(orderId, 'payment', 'widrawn');
 
-    console.log('order failure process completed')
+    console.log('order failure process completed !')
   }
